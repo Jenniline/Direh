@@ -64,7 +64,10 @@ public class Login extends AppCompatActivity {
                     return;
                 }
 
+
                 progressBar.setVisibility(View.VISIBLE);
+
+
 
                 //Now I am going to authenticate the user. We need the email and password
 
@@ -74,7 +77,7 @@ public class Login extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
                             Toast.makeText(Login.this,"Logged In Successfully",Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                            startActivity(new Intent(getApplicationContext(),ReportsRecycler.class));
                         }else {
                             Toast.makeText(Login.this, "Error ! " + task.getException().getMessage(),Toast.LENGTH_SHORT).show();
                         }
@@ -85,12 +88,15 @@ public class Login extends AppCompatActivity {
             }
         });
 
+
         mCreateBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     startActivity(new Intent(getApplicationContext(),Register.class));
                 }
             });
+
+
 
 
 

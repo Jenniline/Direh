@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">AuthenticatorApp</string>
+
+    <string-array name="REPORTS" >
+        <item>Book</item>
+        <item>Pen</item>
+        <item>School Bag</item>
+        <item>Pencil</item>
+        <item>Color Pencil</item>
+        <item>Eraser</item>
+        <item>Ruler</item>
+        <item>Phone</item>
+        <item>Keys</item>
+    </string-array>
+
+    <string-array name="description">
+            <item>Blue colored and plain line</item>
+            <item>Blue colored and plain line</item>
+            <item>Blue colored and plain line</item>
+            <item>Blue colored and plain line</item>
+            <item>Blue colored and plain line</item>
+            <item>Blue colored and plain line</item>
+    </string-array>
+
+    <item name="contact_button" type="drawable">Contact</item>
+
 </resources>
